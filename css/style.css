@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+body {
+  width: 100vw; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 15vh;
+  width: 100vw;
+  background: #3d97ac; }
+  .header .logo {
+    padding: 12px; }
+    .header .logo p a {
+      text-justify: center;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: #ffffffc6; }
+  .header .derecha {
+    display: flex;
+    align-items: center; }
+    .header .derecha form {
+      padding: 0.5rem; }
+      .header .derecha form input {
+        border: 0px solid #ffffff00;
+        border-radius: 5px;
+        height: 1rem;
+        padding: 0.5rem;
+        font-weight: bold; }
+      .header .derecha form button {
+        border: 0px solid #ffffff00;
+        border-radius: 5px;
+        padding: 0.6rem;
+        cursor: pointer; }
+    .header .derecha nav ul {
+      width: 4rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      padding: 30px; }
+      .header .derecha nav ul li a {
+        font-weight: bold;
+        color: #ffffffc6; }
+
+/*# sourceMappingURL=style.css.map */
