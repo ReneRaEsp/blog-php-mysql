@@ -62,6 +62,7 @@ body {
       .header .derecha nav ul li {
         list-style: none; }
         .header .derecha nav ul li a {
+          font-size: 1.4rem;
           font-weight: bold;
           color: #ffffffc6; }
 
@@ -84,6 +85,11 @@ body {
     .section1 .post .titulo {
       font-size: 2rem;
       color: #63929b; }
+      .section1 .post .titulo a {
+        text-decoration: none;
+        color: #63929b; }
+        .section1 .post .titulo a:hover {
+          text-decoration: solid; }
     .section1 .post .fecha {
       font-size: 0.75rem;
       color: #5fb7b7;
@@ -115,10 +121,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 1rem; }
     .sidebar .sidePost .sideThumb {
-      width: 100%;
-      height: 13rem;
+      width: 96%;
+      height: 10rem;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -133,13 +140,92 @@ body {
       width: 100%;
       padding: 1rem; }
       .sidebar .sidePost .sideRight .sideTitulo {
-        color: #b5b5b5e2; }
+        text-align: center;
+        color: #b5b5b5e2;
+        font-size: 1rem; }
       .sidebar .sidePost .sideRight .sideExtracto {
-        color: #b5b5b5e2; }
+        text-align: justify;
+        color: #b5b5b5e2;
+        font-size: 0.7rem; }
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background: #207f82; }
+  .paginacion ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .paginacion ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1rem;
+      height: 1rem;
+      padding: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      background: #a3fef6;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 1s; }
+      .paginacion ul li:hover {
+        background: #939d9d;
+        border-radius: 1rem; }
+      .paginacion ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1rem;
+        height: 1rem;
+        background: #a3fef6;
+        padding: 1rem;
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 1s; }
+        .paginacion ul li a:hover {
+          background: #939d9d;
+          border-radius: 1rem; }
+    .paginacion ul .disabled {
+      background: #747474; }
+      .paginacion ul .disabled:hover {
+        background: #747474;
+        border-radius: 0; }
 
 .footer {
-  height: 10rem;
+  height: 0rem;
   width: 100vw;
   background: #234f48; }
+
+.articuloSingle {
+  background: #163b46; }
+  .articuloSingle .titulo {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .articuloSingle .titulo span {
+      text-decoration: none;
+      color: #f4f4f4; }
+  .articuloSingle .thumb {
+    display: flex;
+    justify-content: center; }
+    .articuloSingle .thumb span {
+      max-width: 90vw;
+      max-height: 90vh; }
+      .articuloSingle .thumb span img {
+        max-width: 90vw;
+        max-height: 90vh; }
+  .articuloSingle .fecha {
+    text-align: center;
+    padding: 1rem;
+    color: #acacac;
+    font-weight: bold; }
+  .articuloSingle .articuloContenido {
+    padding: 2rem;
+    text-align: justify; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+.paginacion
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 5rem
+    background: #207f82
+    ul
+        display: flex
+        justify-content: center
+        flex-direction: row
+        flex-wrap: wrap
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 1rem
+            height: 1rem
+            padding: 1rem
+            margin-left: 1rem
+            margin-right: 1rem
+            background: #a3fef6
+            font-weight: bold
+            cursor: pointer
+            transition: 1s
+            &:hover
+                background: #939d9d
+                border-radius: 1rem
+            a
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 1rem
+                height: 1rem
+                background: #a3fef6
+                padding: 1rem
+                color: #000
+                text-decoration: none
+                cursor: pointer
+                transition: 1s
+                &:hover
+                    background: #939d9d
+                    border-radius: 1rem
+        .disabled
+            background: #747474
+            &:hover
+                background: #747474
+                border-radius: 0
+                
+                
