@@ -11,7 +11,7 @@ if (!$conexion){
    //echo 'Conectado';
 }
 
-$posts = obtener_posts($blog_config['post_por_pagina'], $conexion);
+$posts = obtener_posts($blog_config['post_por_pagina_aside'], $conexion);
 
 require_once 'aside.view.php';
 

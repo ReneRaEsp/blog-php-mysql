@@ -3,7 +3,9 @@
 
 function conexion ($bd_config) {
     try {
-        $conexion = new PDO('mysql:host=us-cdbr-east-04.cleardb.com;dbname=' . $bd_config['database'] , $bd_config['user'], $bd_config['pass']);
+        //$host = 'us-cdbr-east-04.cleardb.com';
+        $host = 'localhost';
+        $conexion = new PDO("mysql:host=$host;dbname=" . $bd_config['database'] , $bd_config['user'], $bd_config['pass']);
         return $conexion;
     } catch (PDOException $e) {
         return false;
@@ -28,7 +30,15 @@ function obtener_posts($post_por_pagina, $conexion){
     return $sentencia->fetchAll();
 }
 
+function obtener_post_por_id($conexion, $id){
+    $resultado =  $conexion->query("SELECT * FROM articulos WHERE id = $id LIMIT 1");
+    $resultado = $resultado->fetchAll();
+    return ($resultado) ? $resultado : false;
+}
 
+function id_articulo($id){
+    return (int)limpiarDatos($id);
+}
 
 
 ?>
