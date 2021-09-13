@@ -7,6 +7,7 @@
     <div class="container">
 
     <section class="section1">
+        <h2 class="titulo"><?php echo $titulo; ?></h2>
         <?php foreach ($resultados as $post): ?>
         <article class="post">
             <h2 class="titulo"><a href="single.php?id= <?php echo $post['id']; ?>"><?php echo $post['titulo']; ?></a></h2>

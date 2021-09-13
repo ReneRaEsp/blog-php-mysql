@@ -12,7 +12,7 @@
         </div>
         <p class="fecha"><?php echo $post['fecha']; ?></p>
         <p class="articuloContenido">
-            <?php echo $post['texto']; ?>
+            <?php echo nl2br($post['texto']); ?>
         </p>
     </section>
     
