@@ -30,6 +30,15 @@ function obtener_posts($post_por_pagina, $conexion){
     return $sentencia->fetchAll();
 }
 
+function numero_paginas($post_por_pagina, $conexion){
+    $total_post = $conexion->prepare('SELECT FOUND_ROWS() as total');
+    $total_post->execute();
+    $total_post = $total_post->fetch()['total'];
+
+    $numero_paginas = ceil($total_post / $post_por_pagina);
+    return $numero_paginas;
+}
+
 function obtener_post_por_id($conexion, $id){
     $resultado =  $conexion->query("SELECT * FROM articulos WHERE id = $id LIMIT 1");
     $resultado = $resultado->fetchAll();
