@@ -3,12 +3,11 @@
     require_once '../views/header.php';
 
 ?>
-    <div class="container">
+    <div class=" container admin">
     
     <section class="section1">
     <h2>Panel de control</h2>
-    <a href="nuevo.php">Nuevo Post</a>
-            <a href="#">Cerrar Sesion</a>
+    <a class="nuevoPost" href="nuevo.php">Nuevo Post</a>
         <?php foreach ($posts as $post): ?>
             
         <article class="post">

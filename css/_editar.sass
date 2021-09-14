@@ -1,2 +1,53 @@
 .editar, .nuevo
-    
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    flex-wrap: wrap
+    margin: auto
+    background: #1a5148
+    width: 100%
+    min-height: 40rem
+    padding: 3rem
+    .titulo
+        margin-bottom: 1rem
+        color: #ffffffac
+    .formulario
+        display: flex
+        justify-content: center
+        flex-direction: column
+        padding: 1rem
+        border-radius: 1rem
+        background: #00000000
+        width: 80vw
+        input
+            margin-bottom: 1rem
+            height: 2rem
+            padding: 5px
+            font-weight: bold
+        textarea
+            margin-bottom: 1rem
+            max-width: 100%
+            min-width: 100%
+            max-height: 20rem
+            min-height: 10rem
+            padding: 5px
+            font-weight: bold
+        a   
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #323232
+            color: #ffffffb4
+            margin-bottom: 1rem
+            height: 2rem
+            border-radius: 5px
+            border: 2px solid #5959594f
+            font-weight: bold
+            cursor: pointer
+            text-decoration: none
+            font-size: .86rem
+            &:hover
+                opacity: .9
+        .btn
+            cursor: pointer

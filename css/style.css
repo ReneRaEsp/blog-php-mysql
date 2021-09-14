@@ -268,4 +268,82 @@ body {
     .login .formulario .btn {
       cursor: pointer; }
 
+.editar, .nuevo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #1a5148;
+  width: 100%;
+  min-height: 40rem;
+  padding: 3rem; }
+  .editar .titulo, .nuevo .titulo {
+    margin-bottom: 1rem;
+    color: #ffffffac; }
+  .editar .formulario, .nuevo .formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #00000000;
+    width: 80vw; }
+    .editar .formulario input, .nuevo .formulario input {
+      margin-bottom: 1rem;
+      height: 2rem;
+      padding: 5px;
+      font-weight: bold; }
+    .editar .formulario textarea, .nuevo .formulario textarea {
+      margin-bottom: 1rem;
+      max-width: 100%;
+      min-width: 100%;
+      max-height: 20rem;
+      min-height: 10rem;
+      padding: 5px;
+      font-weight: bold; }
+    .editar .formulario a, .nuevo .formulario a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #323232;
+      color: #ffffffb4;
+      margin-bottom: 1rem;
+      height: 2rem;
+      border-radius: 5px;
+      border: 2px solid #5959594f;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.86rem; }
+      .editar .formulario a:hover, .nuevo .formulario a:hover {
+        opacity: 0.9; }
+    .editar .formulario .btn, .nuevo .formulario .btn {
+      cursor: pointer; }
+
+.admin {
+  width: 100%;
+  background: #000; }
+  .admin .section1 {
+    width: 100%;
+    padding: 2rem; }
+    .admin .section1 h2 {
+      color: #ffffff97; }
+    .admin .section1 a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e1e1e17d;
+      color: #373737;
+      text-decoration: none;
+      font-weight: bold;
+      height: 2rem;
+      padding: 4px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: 0.3s; }
+      .admin .section1 a:hover {
+        background: #e1e1e1fe; }
+
 /*# sourceMappingURL=style.css.map */

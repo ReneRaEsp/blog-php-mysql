@@ -1,7 +1,7 @@
 <?php require_once 'header.php' ?>
 
 <div class="editar">
-    <h2>Editar Articulo</h2>
+    <h2 class="titulo">Editar Articulo</h2>
     <form method="post" class="formulario"
      enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
         <input type="hidden" 
@@ -22,7 +22,8 @@
         <input type="hidden" name="thumb-guardada" 
         value="<?php echo $post['thumb']; ?>">
 
-        <input type="submit" value="Guardar Datos">
+        <input class="btn" type="submit" value="Guardar Datos">
+        <a class="btn" href="index.php">Volver sin guardar</a>
     </form>
 </div>
 

@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($thumb['name'])){
         $thumb = $thumb_guardada;
     } else {
-        $archivo_subido = '../' . $bd_config['carpeta_imagenes'] . $_FILES['thumb']['name'];
+        $archivo_subido = '../' . $blog_config['carpeta_imagenes'] . $_FILES['thumb']['name'];
         move_uploaded_file($_FILES['thumb']['tmp_name'], $archivo_subido);
         $thumb = $_FILES['thumb']['name'];
     }

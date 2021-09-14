@@ -9,7 +9,9 @@
         <textarea name="texto" placeholder="texto del articulo"></textarea>
         <input type="file" name="thumb">
 
-        <input type="submit" value="Crear Articulo">
+        <input class="btn" type="submit" value="Crear Articulo">
+        <a class="btn" href="index.php">Volver sin guardar</a>
+
     </form>
 </div>
 
