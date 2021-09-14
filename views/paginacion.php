@@ -9,7 +9,7 @@
         </li>
         <?php else: ?>
         <li class="">
-            <a href="<?php echo RUTA . '?p=' .pagina_actual() - 1;?>">
+            <a href="<?php echo 'index.php?p=' .pagina_actual() - 1;?>">
                 &laquo;
             </a>
         </li>
@@ -21,7 +21,7 @@
             </li>-->
             <?php else: ?>
             <li class="">
-                <a href="<?php echo RUTA . '?p=' . $i + 1 ; ?>"><?php echo $i + 1; ?></a>
+                <a href="<?php echo  'index.php?p=' . $i + 1 ; ?>"><?php echo $i + 1; ?></a>
             </li>
             <?php endif; ?>
         <?php $i++ ?>
@@ -32,7 +32,7 @@
         </li>
         <?php else: ?>
         <li class="">
-            <a href="<?php echo RUTA . '?p=' .pagina_actual() + 1; ?>">
+            <a href="<?php echo 'index.php?p=' .pagina_actual() + 1; ?>">
                 &raquo;
             </a>
         </li>

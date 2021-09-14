@@ -3,17 +3,19 @@
     require_once '../views/header.php';
 
 ?>
-
     <div class="container">
     
     <section class="section1">
     <h2>Panel de control</h2>
+    <a href="nuevo.php">Nuevo Post</a>
+            <a href="#">Cerrar Sesion</a>
         <?php foreach ($posts as $post): ?>
+            
         <article class="post">
-            <h2 class="titulo"><?php echo $post['id'] . '.-' . $post ?></h2>
-            <a href="#">Editar</a>
-            <a href="#">Ver</a>
-            <a href="#">Borrar</a>
+            <h2 class="titulo"><?php echo $post['id'] . '.-' . $post['titulo'] ?></h2>
+            <a href="editar.php?id=<?php echo $post['id']; ?>">Editar</a>
+            <a href="../single.php?id=<?php echo $post['id']; ?>">Ver</a>
+            <a href="borrar.php?id=<?php echo $post['id']; ?>">Borrar</a>
         </article>
         <?php endforeach; ?>        
     </section>

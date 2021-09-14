@@ -49,5 +49,10 @@ function id_articulo($id){
     return (int)limpiarDatos($id);
 }
 
+function comprobarSession(){
+    if (!isset($_SESSION['admin'])) {
+        header('Location: ' . RUTA);
+    }
+}
 
 ?>
